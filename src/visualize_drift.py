@@ -17,7 +17,6 @@ def plot_psi_heatmap(psi_matrix):
     ax.set_yticks(range(psi_matrix.shape[0]))
     ax.set_yticklabels([f"Batch {i+1}" for i in range(psi_matrix.shape[0])])
 
-    # Highlight drift cells
     threshold = 0.2
     for i in range(psi_matrix.shape[0]):
         for j in range(psi_matrix.shape[1]):

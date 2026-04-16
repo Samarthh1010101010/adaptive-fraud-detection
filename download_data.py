@@ -2,13 +2,11 @@ import kagglehub
 import os
 import shutil
 
-# Download latest version
 print("Downloading creditcard fraud dataset from Kaggle...")
 path = kagglehub.dataset_download("mlg-ulb/creditcardfraud")
 
 print("Path to dataset files:", path)
 
-# Copy creditcard.csv to data/ folder
 src_file = os.path.join(path, "creditcard.csv")
 dst_file = os.path.join("data", "creditcard.csv")
 
